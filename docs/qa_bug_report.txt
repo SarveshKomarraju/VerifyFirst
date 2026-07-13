@@ -1,0 +1,74 @@
+================================================================================
+OFFICIAL QUALITY ASSURANCE (QA) BUG REPORT
+================================================================================
+
+[TRACKING ID]   BUG-2026-0712
+[DATE]          July 12, 2026
+[STATUS]        New / Open
+[SEVERITY]      Medium
+
+--------------------------------------------------------------------------------
+META INFORMATION
+--------------------------------------------------------------------------------
+Reported By:    Cybersecurity QA Team
+Submitted To:   Development & Engineering Team
+Environment:    Staging & Production (Tested on Chrome, Firefox, Safari)
+
+================================================================================
+DETAILED BUG BREAKDOWN
+================================================================================
+
+1. BROKEN RESOURCE LINKS
+--------------------------------------------------------------------------------
+* Location:         "A roadmap for learning cybersecurity" page (/learning-roadmap)
+* Section:          Under "Resources" section
+* Issue:            Government, NIST, and TryHackMe hyperlinks fail to load (return 404 or dead URLs).
+* Steps to Repo:    1. Navigate to the learning roadmap page.
+                    2. Scroll down to the "Resources" section.
+                    3. Click on the NIST or TryHackMe external links.
+* Expected Result:  User is redirected to the correct external resource page in a new tab.
+* Actual Result:    The browser attempts to load a broken URL or throws a 404 error page.
+* Impact:           Users cannot access external study materials.
+
+
+2. UI TEXT VISIBILITY / TIMELINE TRUNCATION
+--------------------------------------------------------------------------------
+* Location:         "A roadmap for learning cybersecurity" page (/learning-roadmap)
+* Section:          Step-by-step roadmap sections / timeline components
+* Issue:            Roadmap sequence numbers are invisible, cut off, or hidden behind other layout elements.
+* Steps to Repo:    1. Open the learning roadmap page.
+                    2. Scroll through the chronological roadmap timeline steps.
+                    3. Observe the step numbers (1, 2, 3, etc.).
+* Expected Result:  Sequence numbers should be clearly visible, fully rendered, and aligned with the text.
+* Actual Result:    Numbers are severely truncated, cropped, or completely hidden due to layout constraints.
+* Impact:           Users cannot see the proper learning order.
+
+
+3. BROKEN THREAT INTELLIGENCE BUTTONS
+--------------------------------------------------------------------------------
+* Location:         Explore Threat Intelligence dashboard (/threat-intel-dashboard)
+* Section:          Inside individual "Intelligence Reports" feed
+* Issue:            Clicking the "View Report" buttons registers no action (missing event listener or broken route).
+* Steps to Repo:    1. Navigate to the Explore Threat Intelligence dashboard.
+                    2. Locate any individual "Intelligence Report" card.
+                    3. Click the "View Report" button.
+* Expected Result:  The platform opens the full threat intelligence report detail modal or page.
+* Actual Result:    Clicking does nothing; the button changes click state visually but fails to execute any action.
+* Impact:           Critical blocker; users are completely blocked from reading vital threat data.
+
+
+4. BROKEN RESEARCH DOWNLOAD LINK
+--------------------------------------------------------------------------------
+* Location:         Research publication directory (/research-publications)
+* Section:          Whitepapers and article listings
+* Issue:            Clicking the "Download paper" link fails to trigger or download the target file.
+* Steps to Repo:    1. Navigate to the research publication directory.
+                    2. Locate any listed whitepaper or article.
+                    3. Click the "Download paper" link/button.
+* Expected Result:  A local file download sequence is successfully triggered, saving the PDF asset.
+* Actual Result:    Nothing downloads; the system console may throw a file asset path error.
+* Impact:           Users cannot download or access offline research documents.
+
+================================================================================
+END OF REPORT
+================================================================================
