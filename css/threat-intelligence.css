@@ -1,0 +1,827 @@
+/* ============================
+   THREAT INTELLIGENCE
+============================ */
+
+.threat-page section {
+    position: relative;
+    z-index: 1;
+}
+
+body.threat-page .header {
+    position: fixed;
+    z-index: 1000;
+}
+
+body.threat-page {
+    background: #07101D;
+    color: white;
+}
+
+
+body.threat-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(78, 163, 255, .04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(78, 163, 255, .04) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    pointer-events: none;
+
+    animation: gridMove 20s linear infinite;
+
+    z-index: 0;
+
+}
+
+
+
+@keyframes gridMove {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(50px);
+    }
+
+}
+
+
+
+/* ============================
+HERO
+============================ */
+
+
+.intelligence-hero {
+
+    padding: 170px 0 110px;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+
+.intelligence-hero h1 {
+
+    font-size: clamp(3rem, 7vw, 5.4rem);
+
+    background: linear-gradient(90deg, #fff, #6db8ff);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+.intelligence-hero p {
+
+    max-width: 780px;
+
+    margin: auto;
+
+    color: #9EB1C8;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+.hero-tag {
+
+    display: inline-flex;
+
+    padding: .7rem 1.2rem;
+
+    border-radius: 999px;
+
+    background: rgba(78, 163, 255, .08);
+
+    border: 1px solid rgba(78, 163, 255, .3);
+
+    color: #9BCBFF;
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+/* ============================
+OVERVIEW DASHBOARD
+============================ */
+
+
+.overview {
+
+    padding: 80px 0;
+
+}
+
+
+
+.overview-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+
+}
+
+
+
+.overview-card {
+
+    background: #0F1B2D;
+
+    padding: 2rem;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(78, 163, 255, .15);
+
+    transition: .35s;
+
+}
+
+
+
+.overview-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #4EA3FF;
+
+}
+
+
+
+.overview-card span {
+
+    color: #7E94AE;
+
+}
+
+
+
+.overview-card h2 {
+
+    font-size: 2.8rem;
+
+}
+
+
+
+/* ============================
+INTELLIGENCE REPORT CARDS
+============================ */
+
+
+.campaigns {
+
+    padding: 110px 0;
+
+}
+
+
+
+.campaigns h2 {
+
+    text-align: center;
+
+    font-size: 2.7rem;
+
+    margin-bottom: 60px;
+
+}
+
+
+
+.campaign-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+}
+
+
+.campaign-card {
+    background: #0F1B2D;
+    border-radius: 18px;
+    padding: 2rem;
+    border: 1px solid rgba(78, 163, 255, .15);
+    transition:
+        opacity .8s ease,
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+    min-height: 260px;
+}
+
+
+.campaign-card:hover {
+
+    transform: translateY(-8px) scale(1.02);
+
+}
+
+
+
+.campaign-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+}
+
+
+
+.campaign-header h3 {
+
+    font-size: 1.2rem;
+
+    line-height: 1.4;
+
+    margin: 0;
+
+}
+
+
+
+.campaign-card p {
+
+    color: #AABCD0;
+
+    line-height: 1.7;
+
+}
+
+
+
+.report-button {
+
+    width: 100%;
+
+    margin-top: 2rem;
+
+    padding: 1rem;
+
+    border-radius: 12px;
+
+    background: rgba(78, 163, 255, .12);
+
+    border: 1px solid #4EA3FF;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.report-button:hover {
+
+    background: #4EA3FF;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* ============================
+SEVERITY
+============================ */
+
+
+.severity {
+
+    padding: .3rem .8rem;
+
+    border-radius: 999px;
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+
+.severity.high {
+
+    background: rgba(255, 80, 80, .15);
+
+    color: #ff8080;
+
+}
+
+
+
+.severity.medium {
+
+    background: rgba(255, 200, 80, .15);
+
+    color: #ffd66b;
+
+}
+
+
+
+/* ============================
+   PROFESSIONAL REPORT MODAL
+============================ */
+
+.report-window {
+
+    width: min(900px, 92%);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background:
+        linear-gradient(145deg,
+            #101B2D,
+            #0B1526);
+
+    border-radius: 24px;
+
+    padding: 2rem 2.2rem;
+
+    border: 1px solid rgba(78, 163, 255, .25);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, .5);
+
+}
+
+
+/* Close Button */
+
+.close-report {
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 20px;
+
+}
+
+
+
+/* Label */
+
+.report-label {
+
+    color: #4EA3FF;
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+
+/* Title */
+
+#report-title {
+
+    font-size: 2.5rem;
+
+    margin:
+        .5rem 0 1.5rem;
+
+}
+
+
+
+/* Stats */
+
+.report-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+
+    margin-bottom: 1.8rem;
+
+}
+
+
+.report-stats div {
+
+    background: #07101D;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    padding: 1rem;
+
+    border-radius: 14px;
+
+}
+
+
+.report-stats span {
+
+    display: block;
+
+    color: #8191A8;
+
+    font-size: .8rem;
+
+    margin-bottom: .4rem;
+
+}
+
+
+.report-stats strong {
+
+    color: white;
+
+    font-size: .95rem;
+
+}
+
+
+
+/* Sections */
+
+.report-window section {
+
+    background: rgba(255, 255, 255, .03);
+
+    border: 1px solid rgba(255, 255, 255, .06);
+
+    border-radius: 14px;
+
+    padding: 1.2rem;
+
+    margin-top: 1rem;
+
+}
+
+
+
+.report-window h3 {
+
+    font-size: 1.15rem;
+
+    margin-bottom: .6rem;
+
+}
+
+
+
+/* Description */
+
+#report-description {
+
+    color: #B8C4D8;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Lists */
+
+.report-window ul {
+
+    padding-left: 1.2rem;
+
+    margin: 0;
+
+}
+
+
+.report-window li {
+
+    color: #B8C4D8;
+
+    margin: .35rem 0;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px) {
+
+    .report-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #report-title {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+/* ============================
+TIMELINE
+============================ */
+
+
+.lifecycle {
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 1.5rem;
+
+}
+
+
+
+.stage {
+
+    background: #111E32;
+
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+}
+
+
+
+/* ============================
+TRENDS + DEFENSE
+============================ */
+
+
+.trend-grid,
+.recommendation-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+}
+
+
+
+.trend-card,
+.recommendation-card {
+
+    background: #0F1B2D;
+
+    padding: 2rem;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(78, 163, 255, .15);
+
+}
+
+
+
+/* ============================
+SCROLL ANIMATIONS
+============================ */
+
+
+.intelligence-content .overview-card,
+.intelligence-content .campaign-card,
+.intelligence-content .trend-card,
+.intelligence-content .recommendation-card,
+.intelligence-content .stage {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+
+.intelligence-show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+
+/* ============================
+RESPONSIVE
+============================ */
+
+
+@media(max-width:1000px) {
+
+    .campaign-grid,
+    .overview-grid,
+    .trend-grid,
+    .recommendation-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:700px) {
+
+    .campaign-grid,
+    .overview-grid,
+    .trend-grid,
+    .recommendation-grid,
+    .report-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .lifecycle {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .intelligence-hero {
+
+        padding-top: 140px;
+
+    }
+
+}
+
+/* ============================
+MODAL CONTAINER
+============================ */
+
+.report-modal {
+
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, .75);
+
+    z-index: 999999;
+
+}
+
+
+.report-modal.active {
+
+    display: flex !important;
+
+}
+
+
+.close-report {
+
+    float: right;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+}
+
+/* ============================
+   ATTACK LAB PROMO
+============================ */
+
+
+.attack-lab-promo {
+
+    padding: 100px 0;
+
+}
+
+
+
+.attack-lab-box {
+
+    background:
+        linear-gradient(135deg,
+            #101B2D,
+            #07101D);
+
+    border: 1px solid rgba(78, 163, 255, .25);
+
+    border-radius: 24px;
+
+    padding: 60px;
+
+    text-align: center;
+
+}
+
+
+
+.attack-lab-box h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.attack-lab-box p {
+
+    max-width: 750px;
+
+    margin: 0 auto 35px;
+
+    color: #B8C4D8;
+
+    line-height: 1.8;
+
+}
+
+
+
+@media(max-width:700px) {
+
+    .attack-lab-box {
+
+        padding: 35px 20px;
+
+    }
+
+}
+
+.case-study-promo {
+
+    margin-top: 2cap;
+
+}

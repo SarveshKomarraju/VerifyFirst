@@ -1,0 +1,410 @@
+/* =====================================
+   CASE STUDIES PAGE
+   VERIFYFIRST STYLE
+===================================== */
+
+
+.case-page {
+    background: var(--background);
+}
+
+
+/* HERO */
+
+.case-hero {
+
+    padding: 120px 0 80px;
+
+}
+
+
+.case-hero .container {
+
+    max-width: 900px;
+
+}
+
+
+.case-hero h1 {
+
+    font-size: 56px;
+    font-weight: 800;
+    margin: 25px 0;
+
+}
+
+
+.case-hero p {
+
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: .75;
+
+}
+
+
+
+
+
+/* FEATURED CASES */
+
+.featured-cases {
+
+    padding: 60px 0 100px;
+
+}
+
+
+
+.featured-cases h2 {
+
+    font-size: 36px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.case-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 28px;
+
+}
+
+
+
+
+/* CARDS */
+
+
+.case-card {
+
+
+    background: rgba(255, 255, 255, .04);
+
+    border: 1px solid rgba(255, 255, 255, .10);
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    transition: .3s ease;
+
+
+}
+
+
+
+.case-card:hover {
+
+
+    transform: translateY(-6px);
+
+    border-color: #4EA3FF;
+
+
+}
+
+
+
+.case-card h3 {
+
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+.case-card .loss {
+
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    color: #4EA3FF;
+
+    margin: 20px 0;
+
+
+}
+
+
+
+.case-card button {
+
+
+    margin-top: 20px;
+
+}
+
+
+
+/* CASE REPORT MODAL */
+
+
+.case-modal {
+
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .7);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    z-index: 1000;
+
+
+}
+
+
+.case-modal.hidden {
+
+    display: none;
+
+}
+
+
+
+.modal-content {
+
+
+    width: min(950px, 95%);
+
+    max-height: 90vh;
+
+    overflow: auto;
+
+
+    background: #0b1220;
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+
+}
+
+
+
+
+/* REPORT SECTIONS */
+
+
+.case-report-section {
+
+
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, .1);
+
+}
+
+
+
+.case-report-section h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+/* TIMELINE */
+
+
+.case-timeline {
+
+
+    margin-top: 25px;
+
+    border-left: 2px solid #4EA3FF;
+
+    padding-left: 30px;
+
+}
+
+
+
+.timeline-step {
+
+
+    margin-bottom: 25px;
+
+    position: relative;
+
+}
+
+
+
+.timeline-step::before {
+
+
+    content: "";
+
+    position: absolute;
+
+    left: -38px;
+
+    top: 6px;
+
+    height: 12px;
+
+    width: 12px;
+
+    border-radius: 50%;
+
+    background: #4EA3FF;
+
+
+}
+
+.case-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.severity {
+
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.severity.critical {
+
+    background: rgba(255, 70, 70, .15);
+
+    color: #ff6b6b;
+
+}
+
+
+.severity.high {
+
+    background: rgba(255, 159, 67, .15);
+
+    color: #ff9f43;
+
+}
+
+
+
+.case-loss {
+
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    color: #4EA3FF;
+
+    margin: 25px 0;
+
+}
+
+
+
+.case-info {
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    opacity: .7;
+
+    font-size: 14px;
+
+
+}
+
+#close-modal {
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+
+    width: 42px;
+    height: 42px;
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 50%;
+
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+
+    color: white;
+
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+
+    cursor: pointer;
+
+
+    transition: .3s ease;
+
+
+}
+
+
+#close-modal:hover {
+
+    background: rgba(78, 163, 255, 0.2);
+
+    border-color: #4EA3FF;
+
+    transform: rotate(90deg);
+
+}

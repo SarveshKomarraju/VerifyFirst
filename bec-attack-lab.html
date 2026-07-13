@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VerifyFirst | BEC Attack Lab</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bec-attack-lab.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="lab-page">
+
+
+    <header class="header">
+
+        <div class="container nav">
+
+
+            <a href="index.html" class="logo" aria-label="VerifyFirst Home">
+
+                <svg class="logo-svg" width="42" height="42" viewBox="0 0 64 64">
+
+                    <defs>
+
+                        <linearGradient id="verifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+                            <stop offset="0%" stop-color="#4EA3FF" />
+
+                            <stop offset="100%" stop-color="#18D7FF" />
+
+                        </linearGradient>
+
+                    </defs>
+
+
+                    <path d="M32 6 L54 14 V30 C54 44 44 54 32 58 C20 54 10 44 10 30 V14 Z"
+                        fill="url(#verifyGradient)" />
+
+
+                    <path d="M22 32 L29 39 L43 24" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+
+                </svg>
+
+
+                <div class="logo-content">
+
+                    <span class="logo-title">
+                        VerifyFirst
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Independent Cybersecurity Research
+                    </span>
+
+                </div>
+
+
+            </a>
+
+
+
+            <nav class="nav-links">
+
+                <a href="research.html">Research</a>
+
+                <a href="about.html">About BEC</a>
+
+                <a href="resources.html">Resources</a>
+
+                <a href="practice.html">Practice</a>
+
+            </nav>
+
+
+            <a href="threat-intelligence.html" class="btn btn-primary nav-cta">
+
+                Explore Threat Intelligence
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <section class="lab-hero">
+
+        <div class="container">
+
+
+            <span class="section-label">
+                THREAT ANALYSIS ENVIRONMENT
+            </span>
+
+
+            <h1>
+                BEC Attack Lab
+            </h1>
+
+
+            <p>
+                Explore reconstructed Business Email Compromise campaigns and understand
+                how attackers move from reconnaissance to financial exploitation.
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="cases">
+
+        <div class="container">
+
+
+            <h2>
+                Attack Scenarios
+            </h2>
+
+
+
+            <div class="case-grid">
+
+
+                <div class="case-card" data-case="executive">
+
+                    <h3>
+                        Executive Impersonation
+                    </h3>
+
+                    <p>
+                        A fake executive request designed to bypass normal approval processes.
+                    </p>
+
+                </div>
+
+
+
+                <div class="case-card" data-case="vendor">
+
+                    <h3>
+                        Vendor Compromise
+                    </h3>
+
+                    <p>
+                        A payment redirection attack targeting finance teams.
+                    </p>
+
+                </div>
+
+
+
+                <div class="case-card" data-case="payroll">
+
+                    <h3>
+                        Payroll Diversion
+                    </h3>
+
+                    <p>
+                        An impersonation campaign targeting employee payment information.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="attack-view hidden">
+
+        <div class="container">
+
+            <div class="selected-case">
+
+                <span class="case-label">
+                    ACTIVE INVESTIGATION:
+                </span>
+
+                <span id="selected-case">
+                    None
+                </span>
+
+            </div>
+
+            <div class="attack-header panel">
+
+
+                <h2 id="attack-title"></h2>
+
+                <p id="attack-summary"></p>
+
+
+            </div>
+
+            <div class="attack-overview">
+
+                <h2>Attack Profile</h2>
+
+                <div id="attack-profile"></div>
+
+            </div>
+
+            <div class="lab-panel mitre-panel">
+
+                <h2>MITRE ATT&CK Mapping</h2>
+
+                <p class="panel-subtitle">
+                    Techniques observed during this campaign.
+                </p>
+
+                <div id="mitre-techniques"></div>
+
+            </div>
+
+            <div class="investigation-grid">
+
+
+                <div class="lab-panel">
+
+                    <h2>Investigation Status</h2>
+
+                    <div id="investigation-status"></div>
+
+                </div>
+
+
+
+                <div class="lab-panel">
+
+                    <h2>Indicators of Compromise</h2>
+
+                    <div id="ioc"></div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="lab-panel findings-panel">
+
+                <h2>Analyst Findings</h2>
+
+                <p id="findings"></p>
+
+            </div>
+
+            <div class="lab-panel investigation-steps">
+
+                <h2>Recommended Investigation Steps</h2>
+
+                <div id="investigation-steps"></div>
+
+            </div>
+
+
+
+            <div class="timeline" id="timeline">
+
+            </div>
+
+
+
+            <div class="evidence-panel panel">
+
+                <h2>
+                    Evidence Collected
+                </h2>
+
+
+                <div id="evidence">
+
+                </div>
+
+            </div>
+
+            <div class="defense-panel panel">
+
+
+                <h2>
+                    Defense Opportunities
+                </h2>
+
+
+                <div id="defenses"></div>
+
+
+            </div>
+
+            <div class="lab-panel completion-panel">
+
+                <h2>
+                    Investigation Summary
+                </h2>
+
+
+                <div class="status-active">
+
+                    Investigation Complete
+
+                </div>
+
+
+                <p>
+
+                    Threat classification:
+                    <strong>Business Email Compromise</strong>
+
+                    <br><br>
+
+                    Analyst conclusion:
+                    Campaign behavior matches known BEC attack patterns involving
+                    impersonation, social engineering, and financial manipulation.
+
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+        <button id="generate-report" class="btn btn-primary">
+
+            Generate Investigation Report
+
+        </button>
+
+        <section id="report-section" class="panel hidden">
+
+            <h2>
+
+                VerifyFirst Investigation Report
+
+            </h2>
+
+            <div id="generated-report"></div>
+
+        </section>
+
+        <button class="reset-lab">
+
+            ← Return to Attack Scenarios
+
+        </button>
+
+    </section>
+
+
+
+
+    <script src="js/bec-attack-lab.js"></script>
+
+
+</body>
+
+</html>

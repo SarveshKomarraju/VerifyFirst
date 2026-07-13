@@ -1,0 +1,1430 @@
+/* ==========================================================
+   Research Hero
+==========================================================*/
+
+.research-hero {
+
+    position: relative;
+
+    padding: 180px 0 120px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(circle at top left,
+            rgba(78, 163, 255, .12),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(24, 215, 255, .08),
+            transparent 40%),
+
+        var(--bg);
+
+}
+
+.research-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(rgba(255, 255, 255, .03) 1px,
+            transparent 1px),
+
+        linear-gradient(90deg,
+            rgba(255, 255, 255, .03) 1px,
+            transparent 1px);
+
+    background-size: 60px 60px;
+
+    opacity: .18;
+
+    pointer-events: none;
+
+}
+
+.research-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1.6fr .8fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+.research-left {
+
+    max-width: 760px;
+
+}
+
+.research-left h1 {
+
+    margin: 20px 0 28px;
+
+    max-width: 700px;
+
+}
+
+.research-description {
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: var(--text-secondary);
+
+    max-width: 640px;
+
+}
+
+.research-actions {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    margin-top: 42px;
+
+}
+
+/* ==========================================================
+   Publication Panel
+==========================================================*/
+
+.publication-panel {
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 22px;
+
+    padding: 36px;
+
+    background:
+
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .03),
+            rgba(255, 255, 255, .015));
+
+    backdrop-filter: blur(12px);
+
+}
+
+.publication-header {
+
+    color: var(--secondary);
+
+    text-transform: uppercase;
+
+    letter-spacing: .18em;
+
+    font-size: .8rem;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+
+}
+
+.publication-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 18px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+
+}
+
+.publication-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.publication-item span {
+
+    color: var(--text-muted);
+
+    font-size: .9rem;
+
+}
+
+.publication-item strong {
+
+    color: white;
+
+    text-align: right;
+
+    font-weight: 600;
+
+}
+
+/* ==========================================================
+   Responsive
+==========================================================*/
+
+@media (max-width:1100px) {
+
+    .research-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+}
+
+/* ==========================================================
+   Research Hero
+==========================================================*/
+
+
+.research-hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 120px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(circle at top left,
+            rgba(78, 163, 255, .14),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(24, 215, 255, .08),
+            transparent 40%),
+
+        var(--bg);
+
+}
+
+
+
+.research-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(rgba(255, 255, 255, .025) 1px,
+            transparent 1px),
+
+        linear-gradient(90deg,
+            rgba(255, 255, 255, .025) 1px,
+            transparent 1px);
+
+    background-size: 70px 70px;
+
+    opacity: .35;
+
+}
+
+
+
+.research-hero-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr .6fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+
+/* ==========================================================
+   Hero Content
+==========================================================*/
+
+
+.research-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--secondary);
+
+    font-size: .78rem;
+
+    font-weight: 800;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.research-label::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 1px;
+
+    background: var(--secondary);
+
+}
+
+
+
+.research-hero h1 {
+
+    font-size: clamp(4rem, 7vw, 6.5rem);
+
+    line-height: .95;
+
+    letter-spacing: -.04em;
+
+    margin-bottom: 32px;
+
+}
+
+
+
+.research-hero p {
+
+    max-width: 620px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+}
+
+
+
+.research-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 42px;
+
+    color: white;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .3s ease;
+
+}
+
+
+
+.research-link span {
+
+    color: var(--secondary);
+
+    font-size: 1.3rem;
+
+}
+
+
+
+.research-link:hover {
+
+    color: var(--secondary);
+
+}
+
+
+
+/* ==========================================================
+   Metadata
+==========================================================*/
+
+
+.research-meta {
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 22px;
+
+    padding: 36px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .035),
+            rgba(255, 255, 255, .015));
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+
+.meta-title {
+
+    color: var(--secondary);
+
+    text-transform: uppercase;
+
+    font-size: .8rem;
+
+    letter-spacing: .18em;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+.meta-item {
+
+    padding: 22px 0;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, .08);
+
+}
+
+
+
+.meta-item span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: .85rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+.meta-item strong {
+
+    display: block;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+}
+
+
+
+/* ==========================================================
+   Responsive
+==========================================================*/
+
+
+@media(max-width:1100px) {
+
+
+    .research-hero {
+
+        min-height: auto;
+
+        padding: 160px 0 100px;
+
+    }
+
+
+    .research-hero-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+
+    }
+
+    .research-meta {
+
+        width: 100%;
+
+    }
+
+
+}
+
+/* ==========================================================
+   Abstract
+==========================================================*/
+
+
+.abstract {
+
+    padding: 120px 0;
+
+    background: var(--bg);
+
+}
+
+
+
+.abstract-header {
+
+    max-width: 800px;
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.abstract-header h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+
+    line-height: 1.2;
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.abstract-content {
+
+    max-width: 850px;
+
+    border-top:
+
+        1px solid rgba(255, 255, 255, .12);
+
+    padding-top: 50px;
+
+}
+
+
+
+.abstract-content p {
+
+    color: var(--text-secondary);
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+    margin-bottom: 32px;
+
+}
+
+
+
+.abstract-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+/* ==========================================================
+   Research Overview
+==========================================================*/
+
+
+.research-glance {
+
+    padding: 120px 0;
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .015),
+            transparent);
+
+}
+
+
+
+.glance-header {
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.glance-header h2 {
+
+    margin-top: 18px;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.glance-list {
+
+    border-top:
+
+        1px solid rgba(255, 255, 255, .12);
+
+}
+
+
+
+.glance-item {
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 40px;
+
+    padding: 45px 0;
+
+    border-bottom:
+
+        1px solid rgba(255, 255, 255, .12);
+
+}
+
+
+
+.glance-number {
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: rgba(78, 163, 255, .35);
+
+    line-height: 1;
+
+}
+
+
+
+.glance-item h3 {
+
+    font-size: 1.6rem;
+
+    margin-bottom: 16px;
+
+}
+
+
+
+.glance-item p {
+
+    max-width: 700px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+
+}
+
+
+
+@media(max-width:768px) {
+
+
+    .glance-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   Attack Lifecycle
+==========================================================*/
+
+
+.lifecycle {
+
+    padding: 120px 0;
+
+}
+
+
+
+.lifecycle-header {
+
+    max-width: 800px;
+
+    margin-bottom: 80px;
+
+}
+
+
+
+.lifecycle-header h2 {
+
+    margin: 20px 0;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.lifecycle-header p {
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+.lifecycle-track {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 30px;
+
+    position: relative;
+
+}
+
+
+
+/* Connecting line */
+
+.lifecycle-track::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 34px;
+
+    left: 5%;
+
+    right: 5%;
+
+    height: 1px;
+
+    background:
+
+        rgba(78, 163, 255, .35);
+
+    z-index: 0;
+
+}
+
+
+
+.lifecycle-step {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+.step-number {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 68px;
+
+    height: 68px;
+
+    border-radius: 50%;
+
+    background: var(--bg);
+
+    border: 1px solid rgba(78, 163, 255, .45);
+
+    color: var(--secondary);
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.lifecycle-step h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 1.25rem;
+
+}
+
+
+
+.lifecycle-step p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    font-size: .95rem;
+
+}
+
+
+
+@media(max-width:1100px) {
+
+
+    .lifecycle-track {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .lifecycle-track::before {
+
+        display: none;
+
+    }
+
+
+}
+
+/* ==========================================================
+   Findings
+==========================================================*/
+
+
+.findings {
+
+    padding: 120px 0;
+
+    background:
+
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .015),
+            transparent);
+
+}
+
+
+
+.findings-header {
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.findings-header h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.findings-list {
+
+    border-top:
+
+        1px solid rgba(255, 255, 255, .12);
+
+}
+
+
+
+.finding-item {
+
+    display: grid;
+
+    grid-template-columns: 160px 1fr;
+
+    gap: 50px;
+
+    padding: 55px 0;
+
+    border-bottom:
+
+        1px solid rgba(255, 255, 255, .12);
+
+}
+
+
+
+.finding-number {
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color:
+
+        rgba(78, 163, 255, .25);
+
+}
+
+
+
+.finding-content h3 {
+
+    font-size: 1.8rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.finding-content p {
+
+    max-width: 750px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+
+}
+
+
+
+@media(max-width:768px) {
+
+
+    .finding-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   Recommendations
+==========================================================*/
+
+
+.recommendations {
+
+    padding: 120px 0;
+
+}
+
+
+
+.recommendations-header {
+
+    max-width: 800px;
+
+    margin-bottom: 70px;
+
+}
+
+
+
+.recommendations-header h2 {
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.recommendations-header p {
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+.recommendations-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.recommendation {
+
+    position: relative;
+
+    padding: 40px;
+
+    border:
+
+        1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 22px;
+
+    background:
+
+        linear-gradient(145deg,
+            rgba(78, 163, 255, .10),
+            rgba(24, 215, 255, .03));
+
+    transition: .35s ease;
+
+}
+
+
+
+.recommendation:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+
+        rgba(78, 163, 255, .35);
+
+}
+
+
+
+.recommendation-number {
+
+    display: block;
+
+    color: var(--secondary);
+
+    font-weight: 800;
+
+    font-size: .85rem;
+
+    letter-spacing: .15em;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.recommendation h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.recommendation p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
+
+
+
+@media(max-width:900px) {
+
+    .recommendations-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   Publication Closing
+==========================================================*/
+
+
+.publication-close {
+
+    padding: 120px 0;
+
+}
+
+
+
+.close-panel {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 70px;
+
+    border-radius: 28px;
+
+    border:
+
+        1px solid rgba(78, 163, 255, .2);
+
+    background:
+
+        linear-gradient(135deg,
+            rgba(78, 163, 255, .12),
+            rgba(24, 215, 255, .04));
+
+}
+
+
+
+.close-content {
+
+    max-width: 650px;
+
+}
+
+
+
+.close-content h2 {
+
+    margin-top: 20px;
+
+    margin-bottom: 22px;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+
+.close-content p {
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+}
+
+
+
+.close-actions {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+@media(max-width:900px) {
+
+
+    .close-panel {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 45px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   Research Marker
+==========================================================*/
+
+
+.research-marker {
+
+    position: fixed;
+
+    right: 35px;
+
+    bottom: 35px;
+
+    z-index: 50;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    background: rgba(8, 17, 31, .75);
+
+    border:
+
+        1px solid rgba(255, 255, 255, .1);
+
+    backdrop-filter: blur(14px);
+
+}
+
+
+
+.research-marker span:first-child {
+
+    color: var(--secondary);
+
+    font-size: .7rem;
+
+    font-weight: 800;
+
+    letter-spacing: .15em;
+
+}
+
+
+
+.research-marker span:last-child {
+
+    color: var(--text-muted);
+
+    font-size: .75rem;
+
+}
+
+.research-hero-content,
+.research-meta,
+.abstract-header,
+.abstract-content,
+.glance-item,
+.lifecycle-step,
+.finding-item,
+.recommendation,
+.close-panel {
+
+    animation:
+
+        researchReveal .8s ease both;
+
+}
+
+
+
+@keyframes researchReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.lifecycle-step:hover .step-number {
+
+    background:
+
+        rgba(78, 163, 255, .12);
+
+    box-shadow:
+
+        0 0 25px rgba(24, 215, 255, .35);
+
+}
+
+/* ==========================================================
+   Data Collection
+==========================================================*/
+
+.data-collection {
+
+    padding: 120px 0;
+
+}
+
+
+.data-header {
+
+    max-width: 800px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.data-header h2 {
+
+    margin-top: 20px;
+
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+
+    letter-spacing: -.03em;
+
+}
+
+
+.data-header p {
+
+    margin-top: 20px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+}
+
+
+.data-card {
+
+    max-width: 700px;
+
+    padding: 45px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(78, 163, 255, .10),
+            rgba(24, 215, 255, .03));
+
+}
+
+
+.data-number {
+
+    color: var(--secondary);
+
+    font-weight: 800;
+
+    letter-spacing: .15em;
+
+}
+
+
+.data-card h3 {
+
+    margin-top: 25px;
+
+    font-size: 1.8rem;
+
+}
+
+
+.data-card p {
+
+    margin: 20px 0 30px;
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}

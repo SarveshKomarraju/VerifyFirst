@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VerifyFirst | Threat Intelligence</title>
+
+    <meta name="description"
+        content="Independent Business Email Compromise threat intelligence including attacker techniques, current trends, and defensive recommendations.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/threat-intelligence.css">
+
+</head>
+
+<body class="threat-page">
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo" aria-label="VerifyFirst Home">
+
+                <svg class="logo-svg" width="42" height="42" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                        <linearGradient id="verifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+                            <stop offset="0%" stop-color="#4EA3FF" />
+
+                            <stop offset="100%" stop-color="#18D7FF" />
+
+                        </linearGradient>
+
+                    </defs>
+
+                    <path d="M32 6
+            L54 14
+            V30
+            C54 44 44 54 32 58
+            C20 54 10 44 10 30
+            V14
+            Z" fill="url(#verifyGradient)" />
+
+                    <path d="M22 32
+            L29 39
+            L43 24" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+                </svg>
+
+
+                <div class="logo-content">
+
+                    <span class="logo-title">
+
+                        VerifyFirst
+
+                    </span>
+
+                    <span class="logo-subtitle">
+
+                        Independent Cybersecurity Research
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="research.html">Research</a>
+
+                <a href="about.html">About BEC</a>
+
+                <a href="resources.html">Resources</a>
+
+                <a href="practice.html">Practice</a>
+
+            </nav>
+
+            <a href="threat-intelligence.html" class="btn btn-primary nav-cta">
+
+                Explore Threat Intelligence
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <section class="intelligence-hero">
+
+        <div class="container">
+
+            <span class="hero-tag">
+
+                ● Updated Research
+
+            </span>
+
+            <h1>
+
+                Threat Intelligence
+
+            </h1>
+
+            <p>
+
+                Independent intelligence summaries focused on Business Email Compromise campaigns, attacker behavior,
+                emerging techniques, and defensive recommendations.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="overview">
+
+        <div class="container">
+
+            <div class="overview-grid">
+
+                <div class="overview-card">
+
+                    <span>Campaigns Analyzed</span>
+
+                    <h2 class="counter" data-target="250">0</h2>
+
+                </div>
+
+                <div class="overview-card">
+
+                    <span>Threat Categories</span>
+
+                    <h2 class="counter" data-target="6">0</h2>
+
+                </div>
+
+                <div class="overview-card">
+
+                    <span>Primary Target</span>
+
+                    <h2>Finance</h2>
+
+                </div>
+
+                <div class="overview-card">
+
+                    <span>Average Financial Loss</span>
+
+                    <h2>$137K</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="campaigns">
+
+        <div class="container">
+
+            <h2>
+                Intelligence Reports
+            </h2>
+
+
+            <div class="campaign-grid">
+
+
+                <div class="campaign-card" data-report="Executive Impersonation">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Executive Impersonation
+                        </h3>
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Attackers impersonate executives to manipulate employees into approving fraudulent requests.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <div class="campaign-card" data-report="Vendor Email Compromise">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Vendor Email Compromise
+                        </h3>
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Attackers impersonate vendors to redirect invoice payments into fraudulent accounts.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <div class="campaign-card" data-report="Payroll Fraud">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Payroll Fraud
+                        </h3>
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Fake employee requests are used to steal payroll and banking information.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <div class="campaign-card" data-report="Compromised Internal Accounts">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Compromised Internal Accounts
+                        </h3>
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Compromised accounts are used to send realistic internal requests.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <div class="campaign-card" data-report="Gift Card Fraud">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Gift Card Fraud
+                        </h3>
+
+                        <span class="severity medium">
+                            MEDIUM
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Employees are manipulated into purchasing gift cards through fake requests.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+
+                <div class="campaign-card" data-report="Legal Department Spoofing">
+
+                    <div class="campaign-header">
+
+                        <h3>
+                            Legal Department Spoofing
+                        </h3>
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Attackers exploit legal authority and confidentiality to obtain information.
+                    </p>
+
+
+                    <button class="report-button">
+                        View Report
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="attack-lifecycle">
+
+        <div class="container">
+
+            <h2>
+
+                Typical Attack Lifecycle
+
+            </h2>
+
+            <div class="lifecycle">
+
+                <div class="stage">Reconnaissance</div>
+
+                <div class="stage">Identity Research</div>
+
+                <div class="stage">Email Delivery</div>
+
+                <div class="stage">Social Engineering</div>
+
+                <div class="stage">Financial Request</div>
+
+                <div class="stage">Incident</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="trends">
+
+        <div class="container">
+
+            <h2>
+
+                Current Intelligence Trends
+
+            </h2>
+
+            <div class="trend-grid">
+
+                <div class="trend-card">
+
+                    <h3>
+
+                        Primary Targets
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Finance</li>
+
+                        <li>Human Resources</li>
+
+                        <li>Procurement</li>
+
+                        <li>Executive Assistants</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="trend-card">
+
+                    <h3>
+
+                        Common Requests
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Wire Transfers</li>
+
+                        <li>Payroll Updates</li>
+
+                        <li>Vendor Changes</li>
+
+                        <li>Gift Cards</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="trend-card">
+
+                    <h3>
+
+                        Social Engineering
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Urgency</li>
+
+                        <li>Authority</li>
+
+                        <li>Trust</li>
+
+                        <li>Confidentiality</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="recommendations">
+
+        <div class="container">
+
+            <h2>
+
+                Defensive Intelligence
+
+            </h2>
+
+            <div class="recommendation-grid">
+
+                <div class="recommendation-card">
+
+                    Verify Identity
+
+                </div>
+
+                <div class="recommendation-card">
+
+                    Confirm Payment Changes
+
+                </div>
+
+                <div class="recommendation-card">
+
+                    Protect Executive Accounts
+
+                </div>
+
+                <div class="recommendation-card">
+
+                    Employee Awareness
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="attack-lab-promo">
+
+        <div class="container">
+
+            <div class="attack-lab-box">
+
+                <span class="section-label">
+                    INTERACTIVE ANALYSIS
+                </span>
+
+
+                <h2>
+                    Explore a BEC Attack Scenario
+                </h2>
+
+
+                <p>
+                    Follow reconstructed Business Email Compromise campaigns,
+                    analyze attacker behavior, and discover where defensive
+                    controls can stop an attack.
+                </p>
+
+
+                <a href="bec-attack-lab.html" class="btn btn-primary">
+
+                    Launch Attack Lab
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="case-study-promo">
+
+        <div class="container">
+
+            <div class="attack-lab-box">
+
+                <span class="section-label">
+                    REAL-WORLD INVESTIGATIONS
+                </span>
+
+
+                <h2>
+                    Study Real BEC Incidents
+                </h2>
+
+
+                <p>
+                    Analyze documented Business Email Compromise attacks,
+                    understand attacker techniques, financial impact,
+                    and the defensive lessons organizations learned.
+                </p>
+
+
+                <a href="case-studies.html" class="btn btn-primary">
+
+                    View Case Studies
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="report-modal">
+
+
+        <div class="report-window">
+
+
+            <button class="close-report">
+                ×
+            </button>
+
+
+            <span class="report-label">
+                THREAT INTELLIGENCE REPORT
+            </span>
+
+
+            <h2 id="report-title">
+
+            </h2>
+
+
+            <div class="report-stats">
+
+
+                <div>
+                    <span>Category</span>
+                    <strong id="report-category"></strong>
+                </div>
+
+
+                <div>
+                    <span>Targets</span>
+                    <strong id="report-targets"></strong>
+                </div>
+
+
+                <div>
+                    <span>Technique</span>
+                    <strong id="report-technique"></strong>
+                </div>
+
+
+            </div>
+
+
+
+            <section>
+
+                <h3>
+                    Threat Summary
+                </h3>
+
+                <p id="report-description"></p>
+
+            </section>
+
+
+
+            <section>
+
+                <h3>
+                    Indicators Observed
+                </h3>
+
+
+                <ul id="report-indicators"></ul>
+
+
+            </section>
+
+
+            <section>
+
+                <h3>
+                    Defensive Actions
+                </h3>
+
+
+                <ul>
+
+                    <li>Verify identity before approving requests</li>
+
+                    <li>Confirm payment changes through trusted channels</li>
+
+                    <li>Report suspicious communication</li>
+
+                </ul>
+
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="js/threat-intelligence.js"></script>
+
+</body>
+
+</html>

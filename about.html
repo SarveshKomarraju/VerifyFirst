@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        VerifyFirst | Independent Business Email Compromise Research
+    </title>
+
+    <meta name="description"
+        content="VerifyFirst is an independent cybersecurity research initiative focused on Business Email Compromise (BEC), combining original research, educational resources, and practical awareness to help organizations recognize and prevent email-based attacks.">
+
+    <meta name="keywords"
+        content="Business Email Compromise, BEC, Cybersecurity Research, Email Security, Phishing, VerifyFirst">
+
+    <meta name="author" content="VerifyFirst">
+
+    <meta property="og:title" content="VerifyFirst">
+
+    <meta property="og:description" content="Independent cybersecurity research focused on Business Email Compromise.">
+
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="#08111F">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo" aria-label="VerifyFirst Home">
+
+                <svg class="logo-svg" width="42" height="42" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                        <linearGradient id="verifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+                            <stop offset="0%" stop-color="#4EA3FF" />
+
+                            <stop offset="100%" stop-color="#18D7FF" />
+
+                        </linearGradient>
+
+                    </defs>
+
+                    <path d="M32 6
+                       L54 14
+                       V30
+                       C54 44
+                       44 54
+                       32 58
+                       C20 54
+                       10 44
+                       10 30
+                       V14
+                       Z" fill="url(#verifyGradient)" />
+
+                    <path d="M22 32
+                       L29 39
+                       L43 24" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+                </svg>
+
+                <div class="logo-content">
+
+                    <span class="logo-title">
+
+                        VerifyFirst
+
+                    </span>
+
+                    <span class="logo-subtitle">
+
+                        Independent Cybersecurity Research
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="research.html">
+                    Research
+                </a>
+
+                <a href="about.html">
+                    About BEC
+                </a>
+
+                <a href="resources.html">
+                    Resources
+                </a>
+
+                <a href="practice.html">
+                    Practice
+                </a>
+
+            </nav>
+
+            <a href="threat-intelligence.html" class="btn btn-primary nav-cta">
+                Explore Threat Intelligence
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <section class="about-hero">
+
+        <div class="container">
+
+            <div class="about-hero-grid">
+
+                <div class="about-hero-content">
+
+                    <span class="research-label">
+
+                        Understanding the Threat
+
+                    </span>
+
+                    <h1>
+
+                        What is<br>
+                        Business Email<br>
+                        Compromise?
+
+                    </h1>
+
+                    <p>
+
+                        Business Email Compromise (BEC) is a form of cybercrime
+                        that targets trust instead of technology. Attackers
+                        impersonate executives, vendors, or trusted contacts to
+                        manipulate victims into transferring money or revealing
+                        sensitive information.
+
+                    </p>
+
+                </div>
+
+                <aside class="definition-card">
+
+                    <div class="definition-title">
+
+                        BEC Definition
+
+                    </div>
+
+                    <p>
+
+                        A targeted cyberattack in which an attacker uses
+                        fraudulent or compromised email accounts to deceive
+                        victims into taking unauthorized actions.
+
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="comparison">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Understanding the Difference
+
+                </span>
+
+                <h2>
+
+                    Business Email Compromise is more than phishing.
+
+                </h2>
+
+                <p>
+
+                    While both attacks use email, Business Email
+                    Compromise focuses on manipulating trust rather
+                    than stealing credentials through malicious links.
+
+                </p>
+
+            </div>
+
+            <div class="comparison-grid">
+
+                <article class="comparison-card phishing">
+
+                    <div class="comparison-top">
+
+                        <span class="comparison-tag">
+
+                            Traditional Phishing
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Broad, automated attacks
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Mass email campaigns</li>
+
+                        <li>Malicious links or attachments</li>
+
+                        <li>Steals usernames and passwords</li>
+
+                        <li>Little personalization</li>
+
+                    </ul>
+
+                </article>
+
+                <article class="comparison-card bec">
+
+                    <div class="comparison-top">
+
+                        <span class="comparison-tag">
+
+                            Business Email Compromise
+
+                        </span>
+
+                    </div>
+
+                    <h3>
+
+                        Highly targeted deception
+
+                    </h3>
+
+                    <ul>
+
+                        <li>Researches specific organizations</li>
+
+                        <li>Impersonates trusted people</li>
+
+                        <li>Requests payments or sensitive data</li>
+
+                        <li>Relies on psychology instead of malware</li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="timeline">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Attack Timeline
+
+                </span>
+
+                <h2>
+
+                    How a Business Email
+                    Compromise attack unfolds.
+
+                </h2>
+
+                <p>
+
+                    Although every incident is different, most Business Email
+                    Compromise attacks follow a predictable sequence of events
+                    designed to build trust before requesting money or sensitive
+                    information.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-wrapper">
+
+                <div class="timeline-line"></div>
+
+                <article class="timeline-step left">
+
+                    <div class="timeline-marker">
+
+                        01
+
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-label">
+
+                            Reconnaissance
+
+                        </span>
+
+                        <h3>
+
+                            Research the target
+
+                        </h3>
+
+                        <p>
+
+                            Attackers gather information about employees,
+                            executives, vendors, payment procedures, and
+                            organizational relationships through public
+                            sources and previous breaches.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="timeline-step right">
+
+                    <div class="timeline-marker">
+
+                        02
+
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-label">
+
+                            Preparation
+
+                        </span>
+
+                        <h3>
+
+                            Build credibility
+
+                        </h3>
+
+                        <p>
+
+                            Fake domains, spoofed email addresses, or
+                            compromised business accounts are prepared
+                            to closely resemble legitimate communications.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="timeline-step left">
+
+                    <div class="timeline-marker">
+
+                        03
+
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-label">
+
+                            Social Engineering
+
+                        </span>
+
+                        <h3>
+
+                            Manipulate the victim
+
+                        </h3>
+
+                        <p>
+
+                            Urgency, authority, confidentiality, and
+                            trust are used to convince the victim to
+                            bypass normal verification procedures.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="timeline-step right">
+
+                    <div class="timeline-marker">
+
+                        04
+
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-label">
+
+                            Financial Impact
+
+                        </span>
+
+                        <h3>
+
+                            Funds are transferred
+
+                        </h3>
+
+                        <p>
+
+                            Once the fraudulent request is approved,
+                            money or sensitive information is sent
+                            directly to the attacker.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="red-flags">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Warning Signs
+
+                </span>
+
+                <h2>
+
+                    Six common indicators of
+                    Business Email Compromise.
+
+                </h2>
+
+                <p>
+
+                    Most BEC attacks contain subtle warning signs. Recognizing
+                    them before taking action can prevent financial loss and
+                    protect sensitive information.
+
+                </p>
+
+            </div>
+
+            <div class="flags-grid">
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">!</span>
+
+                    <h3>Urgent Requests</h3>
+
+                    <p>
+
+                        Pressure to act immediately before verifying
+                        the request.
+
+                    </p>
+
+                </article>
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">@</span>
+
+                    <h3>Suspicious Email Address</h3>
+
+                    <p>
+
+                        Minor spelling differences or unfamiliar
+                        domains pretending to be legitimate.
+
+                    </p>
+
+                </article>
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">$</span>
+
+                    <h3>Payment Changes</h3>
+
+                    <p>
+
+                        Unexpected requests to change banking
+                        information or payment destinations.
+
+                    </p>
+
+                </article>
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">👤</span>
+
+                    <h3>Executive Impersonation</h3>
+
+                    <p>
+
+                        Messages claiming to be from executives
+                        requesting confidential action.
+
+                    </p>
+
+                </article>
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">🔒</span>
+
+                    <h3>Secrecy</h3>
+
+                    <p>
+
+                        Requests to keep transactions confidential
+                        or avoid normal approval procedures.
+
+                    </p>
+
+                </article>
+
+                <article class="flag-card">
+
+                    <span class="flag-icon">✓</span>
+
+                    <h3>Verification Discouraged</h3>
+
+                    <p>
+
+                        The sender discourages phone calls or
+                        independent confirmation.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="protection-framework">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Protection Framework
+
+                </span>
+
+                <h2>
+
+                    Five habits that dramatically
+                    reduce BEC risk.
+
+                </h2>
+
+                <p>
+
+                    Technology alone cannot stop Business Email
+                    Compromise. Effective defense combines secure
+                    systems, clear procedures, and informed people.
+
+                </p>
+
+            </div>
+
+            <div class="framework-grid">
+
+                <div class="framework-item">
+
+                    <span class="framework-number">01</span>
+
+                    <div>
+
+                        <h3>Always Verify Requests</h3>
+
+                        <p>
+                            Confirm payment requests, banking changes,
+                            and sensitive actions through a separate,
+                            trusted communication channel.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="framework-item">
+
+                    <span class="framework-number">02</span>
+
+                    <div>
+
+                        <h3>Enable Email Authentication</h3>
+
+                        <p>
+                            Implement SPF, DKIM, and DMARC to reduce
+                            domain spoofing and improve email trust.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="framework-item">
+
+                    <span class="framework-number">03</span>
+
+                    <div>
+
+                        <h3>Require Multi-Person Approval</h3>
+
+                        <p>
+                            High-value transactions should require
+                            approval from more than one authorized
+                            employee.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="framework-item">
+
+                    <span class="framework-number">04</span>
+
+                    <div>
+
+                        <h3>Train Employees Regularly</h3>
+
+                        <p>
+                            Awareness training helps employees
+                            recognize manipulation techniques before
+                            responding.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="framework-item">
+
+                    <span class="framework-number">05</span>
+
+                    <div>
+
+                        <h3>Report Suspicious Emails</h3>
+
+                        <p>
+                            Encourage reporting rather than punishment
+                            so potential attacks are investigated
+                            quickly.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="continue-learning">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Continue Exploring
+
+                </span>
+
+                <h2>
+
+                    Keep learning with VerifyFirst.
+
+                </h2>
+
+                <p>
+
+                    Continue exploring Business Email Compromise through
+                    independent research, practical exercises, and curated
+                    educational resources.
+
+                </p>
+
+            </div>
+
+            <div class="continue-grid">
+
+                <a href="research.html" class="continue-card">
+
+                    <span class="continue-number">
+
+                        01
+
+                    </span>
+
+                    <h3>
+
+                        Research
+
+                    </h3>
+
+                    <p>
+
+                        Read the complete independent publication
+                        analyzing Business Email Compromise.
+
+                    </p>
+
+                </a>
+
+                <a href="practice.html" class="continue-card">
+
+                    <span class="continue-number">
+
+                        02
+
+                    </span>
+
+                    <h3>
+
+                        Practice
+
+                    </h3>
+
+                    <p>
+
+                        Test your ability to recognize
+                        suspicious emails through interactive
+                        scenarios.
+
+                    </p>
+
+                </a>
+
+                <a href="resources.html" class="continue-card">
+
+                    <span class="continue-number">
+
+                        03
+
+                    </span>
+
+                    <h3>
+
+                        Resources
+
+                    </h3>
+
+                    <p>
+
+                        Explore trusted references,
+                        cybersecurity organizations,
+                        and learning materials.
+
+                    </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>

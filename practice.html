@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        VerifyFirst | Independent Business Email Compromise Research
+    </title>
+
+    <meta name="description"
+        content="VerifyFirst is an independent cybersecurity research initiative focused on Business Email Compromise (BEC), combining original research, educational resources, and practical awareness to help organizations recognize and prevent email-based attacks.">
+
+    <meta name="keywords"
+        content="Business Email Compromise, BEC, Cybersecurity Research, Email Security, Phishing, VerifyFirst">
+
+    <meta name="author" content="VerifyFirst">
+
+    <meta property="og:title" content="VerifyFirst">
+
+    <meta property="og:description" content="Independent cybersecurity research focused on Business Email Compromise.">
+
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="#08111F">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/practice.css">
+
+    <script src="js/practice.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo" aria-label="VerifyFirst Home">
+
+                <svg class="logo-svg" width="42" height="42" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+
+                        <linearGradient id="verifyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+
+                            <stop offset="0%" stop-color="#4EA3FF" />
+
+                            <stop offset="100%" stop-color="#18D7FF" />
+
+                        </linearGradient>
+
+                    </defs>
+
+                    <path d="M32 6
+                       L54 14
+                       V30
+                       C54 44
+                       44 54
+                       32 58
+                       C20 54
+                       10 44
+                       10 30
+                       V14
+                       Z" fill="url(#verifyGradient)" />
+
+                    <path d="M22 32
+                       L29 39
+                       L43 24" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+
+                </svg>
+
+                <div class="logo-content">
+
+                    <span class="logo-title">
+
+                        VerifyFirst
+
+                    </span>
+
+                    <span class="logo-subtitle">
+
+                        Independent Cybersecurity Research
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="research.html">
+                    Research
+                </a>
+
+                <a href="about.html">
+                    About BEC
+                </a>
+
+                <a href="resources.html">
+                    Resources
+                </a>
+
+                <a href="practice.html">
+                    Practice
+                </a>
+
+            </nav>
+
+            <a href="threat-intelligence.html" class="btn btn-primary nav-cta">
+                Explore Threat Intelligence
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <section class="practice-hero">
+
+        <div class="container">
+
+            <div class="practice-hero-content">
+
+                <span class="research-label">
+
+                    Security Analysis Training
+
+                </span>
+
+                <h1>
+
+                    Investigate Realistic
+                    Business Email
+                    Compromise Scenarios.
+
+                </h1>
+
+                <p>
+
+                    Analyze simulated email incidents, identify warning
+                    signs, and practice the same verification techniques
+                    used to defend organizations against Business Email
+                    Compromise attacks.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="case-library">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+
+                    Investigation Cases
+
+                </span>
+
+                <h2>
+
+                    Select a scenario to analyze.
+
+                </h2>
+
+                <p>
+
+                    Each case represents a different Business Email
+                    Compromise technique and requires a different
+                    approach to investigation.
+
+                </p>
+
+            </div>
+
+
+            <div class="cases-grid">
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 001
+                    </span>
+
+                    <h3>
+                        Executive Impersonation
+                    </h3>
+
+                    <p>
+                        A message appears to come from company leadership
+                        requesting an urgent financial transfer.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: CEO Fraud
+                        </span>
+
+                        <span>
+                            Difficulty: Moderate
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case001">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 002
+                    </span>
+
+                    <h3>
+                        Vendor Payment Fraud
+                    </h3>
+
+                    <p>
+                        A trusted supplier requests updated payment details
+                        before an upcoming invoice deadline.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: Invoice Manipulation
+                        </span>
+
+                        <span>
+                            Difficulty: Advanced
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case002">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 003
+                    </span>
+
+                    <h3>
+                        Compromised Account
+                    </h3>
+
+                    <p>
+                        A familiar employee sends an unusual request from
+                        what appears to be their legitimate account.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: Account Takeover
+                        </span>
+
+                        <span>
+                            Difficulty: Advanced
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case003">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 004
+                    </span>
+
+                    <h3>
+                        Payroll Redirect Scam
+                    </h3>
+
+                    <p>
+                        An employee receives a request claiming to be from
+                        HR asking for updated payroll information.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: Internal Impersonation
+                        </span>
+
+                        <span>
+                            Difficulty: Moderate
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case004">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 005
+                    </span>
+
+                    <h3>
+                        Fake Legal Request
+                    </h3>
+
+                    <p>
+                        A message claims to come from legal staff requesting
+                        confidential company information.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: Authority Manipulation
+                        </span>
+
+                        <span>
+                            Difficulty: Expert
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case005">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+
+                <article class="case-card">
+
+                    <span class="case-number">
+                        CASE 006
+                    </span>
+
+                    <h3>
+                        Executive Travel Emergency
+                    </h3>
+
+                    <p>
+                        An executive supposedly traveling overseas requests
+                        immediate assistance with a payment.
+                    </p>
+
+                    <div class="case-details">
+
+                        <span>
+                            Technique: Urgency Manipulation
+                        </span>
+
+                        <span>
+                            Difficulty: Expert
+                        </span>
+
+                    </div>
+
+                    <button class="case-button" data-case="case006">
+
+                        Review Case →
+
+                    </button>
+
+                </article>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="investigation-section">
+
+        <div class="container">
+
+            <div class="investigation-header">
+
+                <span class="section-label">
+
+                    Active Investigation
+
+                </span>
+
+                <h2>
+
+                    Select a case to begin analysis.
+
+                </h2>
+
+                <p>
+
+                    Review evidence, identify suspicious indicators,
+                    and determine the appropriate security response.
+
+                </p>
+
+            </div>
+
+
+            <div class="investigation-panel">
+
+
+                <div class="case-overview">
+
+                    <span class="case-number">
+
+                        CASE 001
+
+                    </span>
+
+
+                    <h3>
+
+                        Executive Impersonation
+
+                    </h3>
+
+
+                    <p>
+
+                        A suspicious email requesting a financial
+                        transfer requires investigation.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="email-preview">
+
+
+                    <div class="email-header">
+
+                        <div>
+
+                            <span>
+                                From
+                            </span>
+
+                            <strong>
+                                ceo@company-co.com
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Subject
+                            </span>
+
+                            <strong>
+                                Urgent Payment Request
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="email-body">
+
+                        <p>
+                            Hello,
+                        </p>
+
+                        <p>
+                            I need this payment processed immediately.
+                            Please keep this request confidential and
+                            complete it before the end of the day.
+                        </p>
+
+                        <p>
+                            Thank you.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="analysis-panel">
+
+                    <h3>
+                        Evidence Analysis
+                    </h3>
+
+
+                    <div class="evidence-buttons">
+
+                        <!-- Generated by JavaScript -->
+
+                    </div>
+
+
+                    <div class="finding-panel">
+
+                        <span class="finding-label">
+                            Analyst Finding
+                        </span>
+
+
+                        <h4>
+                            Select evidence to analyze
+                        </h4>
+
+
+                        <p>
+                            Review available evidence before making an assessment.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="assessment-section">
+
+        <div class="container">
+
+            <div class="assessment-card">
+
+                <span class="finding-label">
+
+                    Final Assessment
+
+                </span>
+
+
+                <h2>
+
+                    What action should be taken?
+
+                </h2>
+
+
+                <p>
+
+                    Based on the evidence reviewed, determine the
+                    appropriate security response.
+
+                </p>
+
+
+                <div class="assessment-buttons">
+
+                    <button class="assessment-button" data-result="escalate">
+                        Escalate to Security
+                    </button>
+
+                    <button class="assessment-button" data-result="verify">
+                        Request Verification
+                    </button>
+
+                    <button class="assessment-button" data-result="approve">
+                        Approve Request
+                    </button>
+
+                    <button class="assessment-button" data-result="reject">
+                        Reject Request
+                    </button>
+
+                </div>
+
+
+                <div class="assessment-result">
+
+                    <h3>
+                        Awaiting Assessment
+                    </h3>
+
+                    <p>
+                        Review the evidence before making a decision.
+                    </p>
+
+                </div>
+                <div class="investigation-report">
+
+                    <h3>Investigation Report</h3>
+
+                    <div class="report-content">
+
+                        <p><strong>Case:</strong> <span id="report-case">Awaiting Analysis</span></p>
+
+                        <p><strong>Analyst Decision:</strong> <span id="report-decision">Not Submitted</span></p>
+
+                        <p><strong>Assessment:</strong> <span id="report-status">Pending Review</span></p>
+
+                        <p><strong>Security Recommendation:</strong></p>
+
+                        <p id="report-message">
+                            Complete the investigation before generating a report.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="case-intelligence">
+
+                    <h3>Case Intelligence</h3>
+
+                    <div class="intelligence-grid">
+
+                        <div>
+                            <h4>Threat Category</h4>
+                            <p id="threat-category">
+                                Awaiting Analysis
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Attack Technique</h4>
+                            <p id="attack-technique">
+                                Awaiting Analysis
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Risk Indicators</h4>
+                            <ul id="risk-indicators">
+                                <li>Select a case to view indicators</li>
+                            </ul>
+                        </div>
+
+
+                        <div>
+                            <h4>Business Impact</h4>
+                            <p id="business-impact">
+                                Awaiting Analysis
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <h4>Recommended Response</h4>
+                            <p id="recommended-response">
+                                Awaiting Analysis
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>

@@ -1,0 +1,459 @@
+/* ==========================================================
+   Resources Hero
+==========================================================*/
+
+.resources-hero {
+
+    min-height: 75vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 120px;
+
+    background:
+        radial-gradient(circle at top right,
+            rgba(78, 163, 255, .12),
+            transparent 35%),
+        var(--bg);
+
+}
+
+.resources-hero-content {
+
+    max-width: 850px;
+
+}
+
+.resources-hero h1 {
+
+    font-size: clamp(4rem, 7vw, 6rem);
+
+    line-height: .95;
+
+    margin: 28px 0;
+
+}
+
+.resources-hero p {
+
+    max-width: 700px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+}
+
+/* ==========================================================
+   Featured Resources
+==========================================================*/
+
+.featured-resources {
+
+    padding: 120px 0;
+
+}
+
+.featured-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 70px;
+
+}
+
+.featured-card {
+
+    position: relative;
+
+    padding: 42px;
+
+    border-radius: 24px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, .03),
+            rgba(255, 255, 255, .015));
+
+    transition: .35s ease;
+
+}
+
+.featured-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(78, 163, 255, .35);
+
+}
+
+.featured-type {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    background: rgba(78, 163, 255, .12);
+
+    color: var(--secondary);
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+}
+
+.featured-card h3 {
+
+    margin: 26px 0 18px;
+
+    font-size: 2rem;
+
+}
+
+.featured-card p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
+
+@media(max-width:900px) {
+
+    .featured-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   Resource Library
+==========================================================*/
+
+.resource-library {
+
+    padding: 120px 0;
+
+}
+
+.library-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 70px;
+
+}
+
+.library-category {
+
+    padding: 40px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, .03),
+            rgba(255, 255, 255, .015));
+
+    transition: .35s ease;
+
+}
+
+.library-category:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(78, 163, 255, .35);
+
+}
+
+.library-icon {
+
+    font-size: 2rem;
+
+}
+
+.library-category h3 {
+
+    margin: 22px 0;
+
+}
+
+.library-category ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+.library-category li {
+
+    color: var(--text-secondary);
+
+    padding-left: 18px;
+
+    position: relative;
+
+}
+
+.library-category li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 10px;
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--secondary);
+
+}
+
+@media(max-width:900px) {
+
+    .library-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   Organizations
+==========================================================*/
+
+.organizations {
+
+    padding: 120px 0;
+
+}
+
+.organization-list {
+
+    max-width: 1000px;
+
+    margin: 70px auto 0;
+
+    display: grid;
+
+    gap: 22px;
+
+}
+
+.organization-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 34px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, .03),
+            rgba(255, 255, 255, .015));
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    transition: .35s ease;
+
+}
+
+.organization-item:hover {
+
+    transform: translateX(10px);
+
+    border-color: rgba(78, 163, 255, .35);
+
+}
+
+.organization-item h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.organization-item p {
+
+    color: var(--text-secondary);
+
+    max-width: 700px;
+
+}
+
+.organization-arrow {
+
+    font-size: 2rem;
+
+    color: var(--primary);
+
+    transition: .3s ease;
+
+}
+
+.organization-item:hover .organization-arrow {
+
+    transform: translateX(8px);
+
+}
+
+@media(max-width:768px) {
+
+    .organization-item {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+}
+
+/* ==========================================================
+   Learning Path
+==========================================================*/
+
+.learning-path {
+
+    padding: 120px 0;
+
+}
+
+.path-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+
+    margin-top: 70px;
+
+}
+
+.path-stage {
+
+    position: relative;
+
+    padding: 36px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background:
+        linear-gradient(145deg,
+            rgba(78, 163, 255, .04),
+            rgba(255, 255, 255, .02));
+
+    transition: .35s ease;
+
+}
+
+.path-stage:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(78, 163, 255, .35);
+
+}
+
+.stage-number {
+
+    display: inline-block;
+
+    font-size: 2.5rem;
+
+    font-weight: 800;
+
+    color: rgba(78, 163, 255, .55);
+
+    text-shadow: 0 0 10px rgba(78, 163, 255, .25);
+
+    margin-bottom: 22px;
+
+}
+
+.path-stage h3 {
+
+    margin-bottom: 16px;
+
+}
+
+.path-stage p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+}
+
+@media(max-width:1000px) {
+
+    .path-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .path-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
