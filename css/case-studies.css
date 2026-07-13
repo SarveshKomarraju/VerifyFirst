@@ -185,6 +185,7 @@
 
 .modal-content {
 
+    position: relative;
 
     width: min(950px, 95%);
 
@@ -200,7 +201,6 @@
     border-radius: 25px;
 
     padding: 45px;
-
 
 }
 
