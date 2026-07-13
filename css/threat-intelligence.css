@@ -366,6 +366,8 @@ SEVERITY
 
 .report-window {
 
+    position: relative;
+
     width: min(900px, 92%);
 
     max-height: 85vh;
@@ -711,34 +713,6 @@ RESPONSIVE
 MODAL CONTAINER
 ============================ */
 
-.report-modal {
-
-    position: fixed !important;
-
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: none;
-
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(0, 0, 0, .75);
-
-    z-index: 999999;
-
-}
-
-
-.report-modal.active {
-
-    display: flex !important;
-
-}
-
 
 .close-report {
 
@@ -823,5 +797,33 @@ MODAL CONTAINER
 .case-study-promo {
 
     margin-top: 2cap;
+
+}
+
+.report-modal {
+
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, .75);
+
+    z-index: 999999;
+
+}
+
+
+.report-modal.active {
+
+    display: flex !important;
 
 }
