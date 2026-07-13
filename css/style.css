@@ -640,7 +640,6 @@ p {
     display: block;
 
     width: 26px;
-
     height: 2px;
 
     background: white;
@@ -697,10 +696,8 @@ p {
 
     }
 
-    .nav-button {
-
+    .nav-cta {
         display: none;
-
     }
 
 }
@@ -734,6 +731,16 @@ body {
         opacity: 1;
         transform: translateY(0);
 
+    }
+
+}
+
+@media(max-width:1000px) {
+
+    .mobile-toggle {
+        display: block !important;
+        position: relative;
+        z-index: 9999;
     }
 
 }
